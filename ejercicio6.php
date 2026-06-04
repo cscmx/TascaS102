@@ -10,11 +10,8 @@ function isBitten() : bool {
 
 }
 
-if (isBitten()){
-    echo "Te ha mordido Charlie";
-} else {
-    echo "Te salvaste esta vez";
-}
+echo isBitten() ? "Te ha mordido Charlie" : "Te salvaste esta vez";
+
 
 
 /*código para verificar el 50% de posibilidades - porque me entró la duda
