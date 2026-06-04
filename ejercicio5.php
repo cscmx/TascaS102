@@ -1,6 +1,6 @@
 <?php
 
-function grade (int $note) : string {
+function verifyingGrade (int $note) : string {
     
     if ($note>=60) {
         return "Primera División";
@@ -14,7 +14,7 @@ function grade (int $note) : string {
 
 }
 
-$notetoEvaluate = grade(15);
+$notetoEvaluate = verifyingGrade(15);
 
 echo "El grado del alumno es: ".$notetoEvaluate;
 
