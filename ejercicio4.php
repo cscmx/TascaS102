@@ -6,18 +6,16 @@ paràmetre que indiqui de quant a quant es compta(D'1 en 1, de 2 en 2…).
 El compte s’ha de mostrar per pantalla pas per pas. */
 
 
-function sumando (int $num = 10, int $multi) : int {
-    $num = $num + $multi;
-    return $num;
-}
+
 
 $maximo = 55;
-$numero = 3;
+$contador = 3;
 
 do  {
-    echo "Número es igual a: ".$numero .'<br>';
-    $numero = sumando ($numero, 3);
-} while ($numero <= $maximo);
+
+
+} while ($contador < $maximo);
+
 
 
 ?>
