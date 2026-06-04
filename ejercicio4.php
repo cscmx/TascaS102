@@ -6,15 +6,15 @@ paràmetre que indiqui de quant a quant es compta(D'1 en 1, de 2 en 2…).
 El compte s’ha de mostrar per pantalla pas per pas. */
 
 
+function counter(int $max, int $multiplo): void {
+    
+    for ($i = 0; $i < $max; $i++){
+        $i = $i + $multiplo;
+        echo "$i + $multiplo: " .$i.'<br>';
+    }
+}
 
-
-$maximo = 55;
-$contador = 3;
-
-do  {
-
-
-} while ($contador < $maximo);
+counter(18,2);
 
 
 
