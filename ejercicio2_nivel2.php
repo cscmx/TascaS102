@@ -6,6 +6,7 @@ La seva mitjana
 La classificació. Sent "Principiant" menor de 4000. "Intermedi" menor de 8000 i "Professional" la resta.
 Pensa a fer més d'una funció per resoldre aquest problema.
 */
+
 $points1 = rand(0,9999);
 $points2 = rand(0,9999);
 $points3 = rand(0,9999);
@@ -21,7 +22,7 @@ function averagePoints (int $n1,int $n2,int $n3) {
 function pointsClassification (int $nX) {
     if ($nX < 4000) {
         return "Beginner";
-    } elseif ($nX >=4000 and $nX > 8000) {
+    } elseif ($nX < 8000) {
         return "Middle Level";
     } else {
         return "Professional";
@@ -31,7 +32,7 @@ function pointsClassification (int $nX) {
 $averageGamerPoints = (int)averagePoints($points1,$points2,$points3);
 
 echo "The total Points are: ". totalPoints($points1,$points2,$points3).PHP_EOL;
-echo "The average points is:". averagePoints($points1,$points2,$points3).PHP_EOL;
+echo "The average points is: ". averagePoints($points1,$points2,$points3).PHP_EOL;
 echo "The level of the gamer is:  ". pointsClassification($averageGamerPoints).PHP_EOL;
 
 ?>
